@@ -1,0 +1,27 @@
+#1. Membuat variabel list
+kendaraan= ["motor","transportasidarat","150","abuabu","2"]
+kendaraan .append("4000000,skuter")
+print(kendaraan)
+
+kendaraan .insert(2,"vario")
+print(kendaraan)
+
+#2. Menghitung luas bangun datar
+pilihan = input('Apa nama bangun datar yang ingin anda ketahui luasnya ? ')
+
+match pilihan:
+    case 'persegi':
+        sisi=int(input ('Masukkan sisi : '))
+        luasP=sisi*sisi
+        print ('Luas persegi :',luasP)
+    case 'lingkaran':
+        jarijari=float(input('Masukkan jari-jari : '))
+        luasL=3.14*jarijari*jarijari
+        print ('Luas lingkaran :',luasL)
+    case 'segitiga':
+        alas=int(input ('Masukkan alas : '))
+        tinggi=int(input ('Masukkan tinggi : '))
+        luasS=alas*tinggi/2
+        print ('Luas Segitiga :',luasS)
+    case _:
+        print('pilihan tidak tersedia')
